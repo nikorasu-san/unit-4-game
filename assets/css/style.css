@@ -1,8 +1,42 @@
+.card-body {
+    background-image: url(../images/abstract-art-decoration-1029624.jpg);
+}
+
+body {
+    background-color: #8dbfea;
+    background-image: url(../images/square_bg.png)
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+}
+
+button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hide {
+    display: none;
+}
 .crystal-image {
     height:100px;
     width: 100px;
 }
 
-.hide {
-    display: none;
+
+p {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: purple;
+}
+
+.crystal-image:hover {
+    opacity: .80;
 }
