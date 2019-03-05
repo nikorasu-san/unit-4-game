@@ -5,7 +5,7 @@ $(document).ready(function () {
         targetNum: 0,
         currentNum: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
         sapphire: 0,
         amethyst: 0,
         emerald: 0,
@@ -21,10 +21,10 @@ $(document).ready(function () {
         audioWin();
     }
 
-    //add to loses
+    //add to losses
     function addLoss() {
-        counters.loses++;
-        $("#loses").html(counters.loses);
+        counters.losses++;
+        $("#losses").html(counters.losses);
         audioLoss();
     }
 
