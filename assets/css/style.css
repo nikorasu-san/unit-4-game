@@ -1,5 +1,6 @@
 .card-body {
     background-image: url(../images/abstract-art-decoration-1029624.jpg);
+    background-size: cover;
 }
 
 body {
@@ -9,6 +10,10 @@ body {
 
 h1 {
     font-family: 'Audiowide', cursive;
+}
+
+#welcome {
+    font-weight: bold;
 }
 
 button {

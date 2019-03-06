@@ -19,34 +19,35 @@
     <div class="container">
         <div class="card text-center">
             <div class="card-body">
-                <h1>Gem Collectors Game</h1>
+                <h1>Gem Collector Game</h1>
             </div>
         </div><br>
         <div class="row">
             <div class="col-6">
-                <h4>Welcome to the Gem Collectors game!</h4>
+                <h3 id="welcome">How To Play</h3>
                 <hr>
                 <button type="button" id="start" class="btn btn-dark">Start New Game</button>
-                <p>Click the "Start New Game" to activate the game and you will be given a target number in the right
+                <p>1. Click the "Start New Game" to activate the game and you will be given a target number in the right
                     hand panel.<br><br>
-                    When you click the gem stones, the current number counter will increase. Each gem will increase your
-                    current total by a different value. For example the <span class="purple">amethyst</span> may
+                    2. Click the gem stones to increase the current number. Each gem will increase your current total by
+                    a different hidden value. For example the <span class="purple">amethyst</span> may
                     increase your total by 5, but the <span class="red">ruby</span> may increase the value by
                     9.<br><br>
-                    To win, collect the correct amount of gems to match the target number. When you exceed the target
-                    number, you lose the game. To play a new game, simply click the button above. <br><br>
-                    For each new game the values will reset and you will be given a new target number. The value for
-                    each gem will also update as well. So click wisely!
+                    3. To win the game, collect the right amount of gems to exactly match the target number. When you
+                    exceed the target number, you lose the game. <br><br>
+                    4. To play a new game, simply click the "Start New Game" button when it reappears. For each new game
+                    the current and target values will reset and you will be given a new target number. The value for
+                    each gem will update as well. Click wisely!
                 </p>
                 <br>
             </div>
             <div class="col-6">
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="text-center">Target Number: <br><span id="target-num"></span></h3>
+                        <h3 class="text-center">Target Value: <br><span id="target-num"></span></h3>
                     </div>
                     <div class="col-6">
-                        <h3 class="text-center">Current number: <br><span id="current-num">0</span></h3>
+                        <h3 class="text-center">Current Value: <br><span id="current-num">0</span></h3>
                     </div>
                 </div><br><br>
                 <div class="row mt-4">
@@ -63,10 +64,10 @@
                 </div><br><br>
                 <div class="row mt-5">
                     <div class="col-6">
-                        <h4 class="text-center">Wins: <span id="wins">0</span></h4>
+                        <h3 class="text-center">Wins: <br><span id="wins">0</span></h3>
                     </div>
                     <div class="col-6">
-                        <h4 class="text-center">Losses: <span id="loses">0</span></h4>
+                        <h3 class="text-center">Losses: <br><span id="losses">0</span></h3>
                     </div>
                 </div>
             </div>
