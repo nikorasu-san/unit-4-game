@@ -27,6 +27,5 @@ Objective: Create a game showing off jQuery skills.
 ## Future Recommendation
 * Consider create some animation to make the game appear more dynamic. 
 
-* The header background was initially the body's background, but I need to come account for the image shifting once the button disappears.
 
 

@@ -47,3 +47,22 @@ p {
 .crystal-image:hover {
     opacity: .80;
 }
+
+
+@media only screen and (max-width: 992px){
+    html {
+        height: 120%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    html {
+        height: 150%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    body {
+        background-size: unset;
+    }
+}
