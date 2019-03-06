@@ -1,4 +1,5 @@
 .card-body {
+    background-color: azure;
     background-image: url(../images/abstract-art-decoration-1029624.jpg);
     background-size: cover;
 }
@@ -27,6 +28,7 @@ button {
 .crystal-image {
     height:100px;
     width: 100px;
+    border: 2px grey solid;
 }
 
 
