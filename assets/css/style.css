@@ -1,10 +1,10 @@
-.card-body {
-    background-color: azure;
+body {
+    height: 100vh;
     background-image: url(../images/abstract-art-decoration-1029624.jpg);
     background-size: cover;
 }
 
-body {
+.card-body {
     background-color: #8dbfea;
     background-image: url(../images/square_bg.png)
 }
