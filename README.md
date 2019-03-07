@@ -27,5 +27,7 @@ Objective: Create a game showing off jQuery skills.
 ## Future Recommendation
 * Consider create some animation to make the game appear more dynamic. 
 
+* While validating the HTML I found an happy accident. Using the value attribute on an image tag will prevent the value from populating in Chrome Dev tools. For assignment sake, I submitted the game using a custom attribute and prevent validation errors on https://validator.w3.org. To help curb cheating, using the value attribute may help.
+
 
 

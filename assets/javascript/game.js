@@ -40,13 +40,10 @@ $(document).ready(function () {
         counters.amethyst = Math.floor(Math.random() * Math.floor(12) + 1);
         counters.emerald = Math.floor(Math.random() * Math.floor(12) + 1);
         counters.ruby = Math.floor(Math.random() * Math.floor(12) + 1);
-        $("#sapphire").val(counters.sapphire);
-        $("#amethyst").val(counters.amethyst);
-        $("#emerald").val(counters.emerald);
-        $("#ruby").val(counters.ruby);
-        console.log("saph: " + counters.sapphire + "em: " + counters.emerald + "ame: " + counters.amethyst + "rub: " + counters.ruby);
-        console.log("saph: " + $("#sapphire").val() + "ame: " + $("#amethyst").val() + "em: " + $("#emerald").val()
-            + "rub: " + $("#ruby").val());
+        $("#sapphire").attr("data-value", counters.sapphire);
+        $("#amethyst").attr("data-value", counters.amethyst);
+        $("#emerald").attr("data-value", counters.emerald);
+        $("#ruby").attr("data-value", counters.ruby);
     }
 
     // Make a sound for successful letter guesses
@@ -74,10 +71,10 @@ $(document).ready(function () {
         counters.ruby = 0;
         counters.currentNum = 0;
         counters.targetNum = 0;
-        $("#sapphire").val(0);
-        $("#amethyst").val(0);
-        $("#emerald").val(0);
-        $("#ruby").val(0);
+        $("#sapphire").attr("data-value", 0);
+        $("#amethyst").attr("data-value", 0);
+        $("#emerald").attr("data-value", 0);
+        $("#ruby").attr("data-value", 0);
         $("#current-num").html("0");
         $("#target-num").html("0")
         //reveal start button
@@ -86,7 +83,8 @@ $(document).ready(function () {
         $('.crystal-image').off().on('click', function () {
         });
     }
-    // Main app -----  start game on button click
+    // ---- Main app -----  
+    // start game on button click
     $("#start").on("click", function () {
         // 1. randomize target number
         getTarget();
@@ -96,17 +94,12 @@ $(document).ready(function () {
         $(this).addClass("hide");
         // game on
         gameOn = true;
-        console.log("after start: ", gameOn);
-        console.log("saph: " + counters.sapphire + " / val: " + $("#sapphire").val())
 
-
+        // allow clicks on crystal images
         $(".crystal-image").on("click", function () {
             if (gameOn) {
-                console.log(this)
-                console.log("current1: ", counters.currentNum);
-                console.log("this val: ", $(this).val())
-                counters.currentNum += parseInt($(this).val());
-                console.log("current2: ", counters.currentNum);
+                // add the crystal's value to current number & print on page
+                counters.currentNum += parseInt($(this).attr("data-value"));
                 $("#current-num").html(counters.currentNum);
                 // check for win or lose condition
                 if (counters.currentNum === counters.targetNum) {
@@ -129,7 +122,4 @@ $(document).ready(function () {
             }
         });
     });
-
-
-    // }
 });
